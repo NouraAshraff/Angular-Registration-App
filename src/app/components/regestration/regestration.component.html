@@ -1,0 +1,19 @@
+<div class="content">
+    <h2>Regestration</h2>
+    <input [(ngModel)] ="name"  type="text"  placeholder="Name" >
+    @if(name && name.length < 3){
+        <div style="text-align: center;color: red;">
+            <p>Name Can not be less than 3</p>
+        </div>
+    }
+    <br><br>
+    <input  [(ngModel)] ="age" type="text"  placeholder="Age">
+    @if(age && (+age > 30 || +age < 20) ){
+        <div style="text-align: center;color: red;">
+            <p>Age must be between 20 and 30</p>
+        </div>
+    }
+    <br><br>
+    <button (click)="addStudent()" >Add</button>
+</div>
+

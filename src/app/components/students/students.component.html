@@ -1,0 +1,30 @@
+<div class="content">
+    
+<h2>Students</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr>
+            <td>noura</td>
+            <td>22</td>
+        </tr> -->
+
+        @for (s of studentsFromReg; track s.name) {
+            <tr>
+                <td>{{s.name}}</td>
+                <td>{{s.age}}</td>
+                
+            </tr>
+        }
+        
+
+    </tbody>
+</table>
+
+
+</div>
