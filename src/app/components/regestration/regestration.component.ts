@@ -22,6 +22,9 @@ export class RegestrationComponent {
     this.student ={name:this.name, age:this.age};
     // console.log(this.student);
     this.myEvent.emit(this.student); //send student to parent
+    this.name = "";
+    this.age = "";
+
     
   }
 

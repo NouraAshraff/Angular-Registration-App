@@ -14,4 +14,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class StudentsComponent {
   @Input() studentsFromReg :{name:string, age:number}[] = [];
+
+  
 }
