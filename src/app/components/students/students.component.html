@@ -14,15 +14,23 @@
             <td>22</td>
         </tr> -->
 
+
+        <!-- control flow
         @for (s of studentsFromReg; track s.name) {
             <tr>
                 <td>{{s.name}}</td>
                 <td>{{s.age}}</td>
                 
             </tr>
-        }
-        
+        } -->
 
+        <!-- Directive [Built-In Directive] [Structrual Directive] -->
+        <tr *ngFor="let s of studentsFromReg">
+            <td>{{s.name}}</td>
+            <td>{{s.age}}</td> 
+            <!-- Directive / -->
+            <!-- <td *ngIf="+s.age<30">{{s.age}}</td> -->
+        </tr>
     </tbody>
 </table>
 
